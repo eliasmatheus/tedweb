@@ -9,6 +9,15 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background: #090909;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, button{
+    font: 16px helvetica;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;
 
