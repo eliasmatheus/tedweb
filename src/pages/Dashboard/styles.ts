@@ -140,6 +140,11 @@ export const PlanCard = styled.div`
 export const PlanHeader = styled.div`
   align-items: center;
   text-align: center;
+  div {
+    span {
+      font-weight: 800;
+    }
+  }
   h3 {
     font-family: Helvetica;
     font-style: normal;

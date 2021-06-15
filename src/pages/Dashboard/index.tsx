@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Countdown from 'react-countdown';
 
 import logoHeader from '../../assets/logo-header.png';
@@ -27,6 +27,14 @@ import {
 } from './styles';
 
 const Dashboard: React.FC = () => {
+  const [date, setDate] = useState(10000000);
+
+  useEffect(() => {
+    const dataEvento = new Date(2021, 8, 17);
+    const decorrido = dataEvento.getTime() - Date.now();
+    setDate(decorrido);
+  }, []);
+
   const Completionist = () => <span>You are good to go!</span>;
   const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
     if (completed) {
@@ -65,7 +73,7 @@ const Dashboard: React.FC = () => {
           <img src={contrapondoParadigmas} alt="Contrapondo Paradigmas" />
         </HeaderBody>
         <CountDown>
-          <Countdown date={Date.now() + 1000000 * 10000} renderer={renderer} />
+          <Countdown date={Date.now() + date} renderer={renderer} />
         </CountDown>
       </Header>
       <SpeakersSection>
@@ -115,7 +123,9 @@ const Dashboard: React.FC = () => {
         <PlanCard>
           <PlanHeader>
             <h3>BÁSICO</h3>
-            <div>R$ 00</div>
+            <div>
+              R$ <span>00</span>
+            </div>
             <div>Ingresso grátis</div>
           </PlanHeader>
           <Profit>
@@ -128,7 +138,9 @@ const Dashboard: React.FC = () => {
         <PlanCard>
           <PlanHeader>
             <h3>PREMIUM</h3>
-            <div>R$ 60</div>
+            <div>
+              R$ <span>60</span>
+            </div>
             <div>Básico +</div>
           </PlanHeader>
           <Profit>
