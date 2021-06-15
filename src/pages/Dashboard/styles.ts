@@ -294,10 +294,14 @@ export const LogosSponsors = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  justify-content: center;
   div + div {
     margin-left: 60px;
   }
+  @media (max-width: 866px) {
+    align-items: center;
+    justify-content: center;
+  }
+
   @media (max-width: 570px) {
     flex-direction: column;
     text-align: center;
