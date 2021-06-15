@@ -68,6 +68,12 @@ const Dashboard: React.FC = () => {
       <Header>
         <HeaderTop>
           <img src={logoHeader} alt="TEDx Belo Horizonte" />
+          <div>
+            <div>PARCEIROS</div>
+            <div>ORGANIZADORES</div>
+            <div>FAQ</div>
+            <div>IMPRESSA</div>
+          </div>
         </HeaderTop>
         <HeaderBody>
           <img src={contrapondoParadigmas} alt="Contrapondo Paradigmas" />

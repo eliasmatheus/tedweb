@@ -6,9 +6,40 @@ export const Header = styled.div`
 
 export const HeaderTop = styled.div`
   background: white;
-  height: 113px;
-  padding-top: 31px;
-  padding-left: 28px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+
+  div {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0px;
+    font-style: normal;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    cursor: pointer;
+    height: 100%;
+    /* background: coral; */
+
+    div {
+      /* background: red; */
+      display: flex;
+      align-items: center;
+
+      /* background: red; */
+      &:hover {
+        background: #ededed;
+        transition: 0.2s;
+      }
+    }
+  }
 `;
 
 export const HeaderBody = styled.div`
