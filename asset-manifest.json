@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/tedweb/static/js/main.9875c752.chunk.js",
-    "main.js.map": "/tedweb/static/js/main.9875c752.chunk.js.map",
+    "main.js": "/tedweb/static/js/main.02877c3e.chunk.js",
+    "main.js.map": "/tedweb/static/js/main.02877c3e.chunk.js.map",
     "runtime-main.js": "/tedweb/static/js/runtime-main.d31312f6.js",
     "runtime-main.js.map": "/tedweb/static/js/runtime-main.d31312f6.js.map",
-    "static/js/2.429dff8b.chunk.js": "/tedweb/static/js/2.429dff8b.chunk.js",
-    "static/js/2.429dff8b.chunk.js.map": "/tedweb/static/js/2.429dff8b.chunk.js.map",
+    "static/js/2.a3bba91b.chunk.js": "/tedweb/static/js/2.a3bba91b.chunk.js",
+    "static/js/2.a3bba91b.chunk.js.map": "/tedweb/static/js/2.a3bba91b.chunk.js.map",
     "index.html": "/tedweb/index.html",
-    "static/js/2.429dff8b.chunk.js.LICENSE.txt": "/tedweb/static/js/2.429dff8b.chunk.js.LICENSE.txt",
+    "static/js/2.a3bba91b.chunk.js.LICENSE.txt": "/tedweb/static/js/2.a3bba91b.chunk.js.LICENSE.txt",
     "static/media/contrapondo-paradigmas.186e32be.png": "/tedweb/static/media/contrapondo-paradigmas.186e32be.png",
     "static/media/patr1.ba967202.png": "/tedweb/static/media/patr1.ba967202.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d31312f6.js",
-    "static/js/2.429dff8b.chunk.js",
-    "static/js/main.9875c752.chunk.js"
+    "static/js/2.a3bba91b.chunk.js",
+    "static/js/main.02877c3e.chunk.js"
   ]
 }
