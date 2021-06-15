@@ -193,3 +193,26 @@ export const ProfitHeader = styled.div`
   font-size: 24px;
   line-height: 28px;
 `;
+
+export const SponsorsSection = styled.div`
+  background: white;
+  padding-top: 53px;
+  padding-bottom: 53px;
+  padding-left: 81px;
+  padding-right: 81px;
+  h2 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+  }
+`;
+
+export const LogosSponsors = styled.div`
+  display: flex;
+  margin-top: 30px;
+  div + div {
+    margin-left: 60px;
+  }
+`;

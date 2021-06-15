@@ -3,6 +3,9 @@ import Countdown from 'react-countdown';
 
 import logoHeader from '../../assets/logo-header.png';
 import contrapondoParadigmas from '../../assets/contrapondo-paradigmas.png';
+import patrocinador1 from '../../assets/patr1.png';
+import patrocinador2 from '../../assets/patr2.png';
+import patrocinador3 from '../../assets/patr3.png';
 
 import {
   Header,
@@ -19,6 +22,8 @@ import {
   Profit,
   ProfitHeader,
   ProfitBody,
+  SponsorsSection,
+  LogosSponsors,
 } from './styles';
 
 const Dashboard: React.FC = () => {
@@ -141,6 +146,20 @@ const Dashboard: React.FC = () => {
           <button>COMPRE AGORA!</button>
         </PlanCard>
       </PlanSection>
+      <SponsorsSection>
+        <h2>PATROCINADORES</h2>
+        <LogosSponsors>
+          <div>
+            <img src={patrocinador1} alt="FirstSpeaker" />
+          </div>
+          <div>
+            <img src={patrocinador2} alt="FirstSpeaker" />
+          </div>
+          <div>
+            <img src={patrocinador3} alt="FirstSpeaker" />
+          </div>
+        </LogosSponsors>
+      </SponsorsSection>
     </>
   );
 };
