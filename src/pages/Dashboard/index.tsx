@@ -72,10 +72,11 @@ const Dashboard: React.FC = () => {
         <HeaderBody>
           <img src={contrapondoParadigmas} alt="Contrapondo Paradigmas" />
         </HeaderBody>
-        <CountDown>
-          <Countdown date={Date.now() + date} renderer={renderer} />
-        </CountDown>
       </Header>
+      <CountDown>
+        <Countdown date={Date.now() + date} renderer={renderer} />
+      </CountDown>
+
       <SpeakersSection>
         <h2>PALESTRANTES</h2>
         <div>

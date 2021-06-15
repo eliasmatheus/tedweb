@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  height: 481px;
+  position: relative;
 `;
 
 export const HeaderTop = styled.div`
@@ -13,6 +13,11 @@ export const HeaderTop = styled.div`
 
 export const HeaderBody = styled.div`
   padding-top: 64px;
+  img {
+    width: 48%;
+    max-width: 684px;
+    min-width: 293px;
+  }
 `;
 
 export const SpeakersSection = styled.div`
@@ -32,6 +37,9 @@ export const SpeakersSection = styled.div`
   div {
     display: flex;
     width: 100%;
+    @media (max-width: 866px) {
+      flex-direction: column;
+    }
     div {
       flex-direction: column;
       div {
@@ -70,9 +78,20 @@ export const DescriptionSpaker = styled.div`
 
 export const CountDown = styled.div`
   height: 170px;
-  /* background: #cccc; */
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin-bottom: -63px;
+
+  @media (max-width: 866px) {
+    height: 100px;
+    margin-bottom: -45px;
+  }
+
+  @media (max-width: 560px) {
+    height: 77px;
+    margin-bottom: -37px;
+  }
 `;
 export const CountDownBody = styled.div`
   width: 70%;
@@ -86,12 +105,11 @@ export const CountDownBody = styled.div`
   font-weight: bold;
   font-size: 64px;
   line-height: 74px;
-  padding-left: 62px;
-  padding-right: 62px;
+  padding-left: 3%;
+  padding-right: 3%;
 `;
 
 export const CountDownCard = styled.div`
-  margin-top: 40px;
   div + div {
     font-family: Helvetica;
     font-style: normal;
@@ -99,6 +117,38 @@ export const CountDownCard = styled.div`
     font-size: 22px;
     line-height: 25px;
     margin-top: 10px;
+  }
+
+  @media (max-width: 866px) {
+    height: 100px;
+    margin-top: 0px;
+    div {
+      font-size: 40px;
+      height: 55px;
+    }
+    div + div {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 25px;
+      margin-top: 0px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    div {
+      font-size: 20px;
+      height: 45px;
+    }
+    div + div {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 9px;
+      line-height: 25px;
+      margin-top: 0px;
+    }
   }
 `;
 
@@ -108,6 +158,11 @@ export const PlanSection = styled.div`
   justify-content: space-evenly;
   margin-top: 182px;
   margin-bottom: 182px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const PlanCard = styled.div`
@@ -117,6 +172,10 @@ export const PlanCard = styled.div`
   justify-content: center;
   align-items: center;
   width: 293px;
+
+  & + & {
+    margin-top: 100px;
+  }
   button {
     margin-top: auto;
     width: 293px;
@@ -139,11 +198,18 @@ export const PlanCard = styled.div`
       transition: 0.5s;
     }
   }
+
+  @media (max-width: 650px) {
+    button {
+      margin-top: 30px;
+    }
+  }
 `;
 
 export const PlanHeader = styled.div`
   align-items: center;
   text-align: center;
+  /* position: relative; */
   div {
     span {
       font-weight: 800;
@@ -215,13 +281,28 @@ export const SponsorsSection = styled.div`
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
+    text-align: center;
+  }
+
+  @media (max-width: 570px) {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 `;
 
 export const LogosSponsors = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
+  justify-content: center;
   div + div {
     margin-left: 60px;
+  }
+  @media (max-width: 570px) {
+    flex-direction: column;
+    text-align: center;
+    div + div {
+      margin-left: 0px;
+    }
   }
 `;
