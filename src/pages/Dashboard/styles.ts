@@ -281,12 +281,12 @@ export const SponsorsSection = styled.div`
     font-weight: normal;
     font-size: 31px;
     line-height: 36px;
-    text-align: center;
   }
 
   @media (max-width: 570px) {
     padding-left: 0px;
     padding-right: 0px;
+    text-align: center;
   }
 `;
 
