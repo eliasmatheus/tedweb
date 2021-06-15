@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import Countdown from 'react-countdown';
 
 import logoHeader from '../../assets/logo-header.png';
 import contrapondoParadigmas from '../../assets/contrapondo-paradigmas.png';
@@ -9,12 +10,46 @@ import {
   HeaderTop,
   SpeakersSection,
   DescriptionSpaker,
-  ContagemRegressiva,
-  ContagemRegressivaBody,
-  ContagemRegressivaCard,
+  CountDown,
+  CountDownBody,
+  CountDownCard,
+  PlanSection,
+  PlanCard,
+  PlanHeader,
+  Profit,
+  ProfitHeader,
+  ProfitBody,
 } from './styles';
 
 const Dashboard: React.FC = () => {
+  const Completionist = () => <span>You are good to go!</span>;
+  const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    }
+    // Render a countdown
+    return (
+      <CountDownBody>
+        <CountDownCard>
+          <div>{days}</div>
+          <div>DIAS</div>
+        </CountDownCard>
+        <CountDownCard>
+          <div>{hours}</div>
+          <div>HORAS</div>
+        </CountDownCard>
+        <CountDownCard>
+          <div>{minutes}</div>
+          <div>MINUTOS</div>
+        </CountDownCard>
+        <CountDownCard>
+          <div>{seconds}</div>
+          <div>SEGUNDOS</div>
+        </CountDownCard>
+      </CountDownBody>
+    );
+  };
   return (
     <>
       <Header>
@@ -24,28 +59,10 @@ const Dashboard: React.FC = () => {
         <HeaderBody>
           <img src={contrapondoParadigmas} alt="Contrapondo Paradigmas" />
         </HeaderBody>
-        <ContagemRegressiva>
-          <ContagemRegressivaBody>
-            <ContagemRegressivaCard>
-              <div>130</div>
-              <div>DIAS</div>
-            </ContagemRegressivaCard>
-            <ContagemRegressivaCard>
-              <div>22</div>
-              <div>HORAS</div>
-            </ContagemRegressivaCard>
-            <ContagemRegressivaCard>
-              <div>35</div>
-              <div>MINUTOS</div>
-            </ContagemRegressivaCard>
-            <ContagemRegressivaCard>
-              <div>55</div>
-              <div>SEGUNDOS</div>
-            </ContagemRegressivaCard>
-          </ContagemRegressivaBody>
-        </ContagemRegressiva>
+        <CountDown>
+          <Countdown date={Date.now() + 1000000 * 10000} renderer={renderer} />
+        </CountDown>
       </Header>
-
       <SpeakersSection>
         <h2>PALESTRANTES</h2>
         <div>
@@ -89,6 +106,41 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </SpeakersSection>
+      <PlanSection>
+        <PlanCard>
+          <PlanHeader>
+            <h3>BÁSICO</h3>
+            <div>R$ 00</div>
+            <div>Ingresso grátis</div>
+          </PlanHeader>
+          <Profit>
+            <div>Acesso a palestras</div>
+            <div>Certificado</div>
+          </Profit>
+          <button>RESERVE JÁ!</button>
+        </PlanCard>
+
+        <PlanCard>
+          <PlanHeader>
+            <h3>PREMIUM</h3>
+            <div>R$ 60</div>
+            <div>Básico +</div>
+          </PlanHeader>
+          <Profit>
+            <ProfitHeader>
+              Além do acesso básico, você também vai levar:
+            </ProfitHeader>
+            <ProfitBody>
+              <div>Kit exclusivo</div>
+              <div>Caneca</div>
+              <div>Blusa</div>
+              <div>Adesivo</div>
+              <div>Tedxclusive</div>
+            </ProfitBody>
+          </Profit>
+          <button>COMPRE AGORA!</button>
+        </PlanCard>
+      </PlanSection>
     </>
   );
 };

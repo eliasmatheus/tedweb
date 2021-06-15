@@ -17,7 +17,7 @@ export const HeaderBody = styled.div`
 
 export const SpeakersSection = styled.div`
   background: white;
-  height: 855px;
+  /* height: 855px; */
 
   display: flex;
   /* justify-content: center; */
@@ -68,16 +68,14 @@ export const DescriptionSpaker = styled.div`
   }
 `;
 
-export const ContagemRegressiva = styled.div`
+export const CountDown = styled.div`
   height: 170px;
   /* background: #cccc; */
   display: flex;
   justify-content: center;
-  padding-left: 62px;
-  padding-right: 62px;
 `;
-export const ContagemRegressivaBody = styled.div`
-  width: 1049px;
+export const CountDownBody = styled.div`
+  width: 70%;
   background: white;
   display: flex;
   justify-content: space-between;
@@ -88,14 +86,110 @@ export const ContagemRegressivaBody = styled.div`
   font-weight: bold;
   font-size: 64px;
   line-height: 74px;
+  padding-left: 62px;
+  padding-right: 62px;
 `;
 
-export const ContagemRegressivaCard = styled.div`
+export const CountDownCard = styled.div`
+  margin-top: 40px;
   div + div {
     font-family: Helvetica;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 25px;
+    margin-top: 10px;
   }
+`;
+
+export const PlanSection = styled.div`
+  /* background: black; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 182px;
+  margin-bottom: 182px;
+`;
+
+export const PlanCard = styled.div`
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  button {
+    margin-top: auto;
+    width: 293px;
+    height: 104px;
+    background: #ff1100;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 10px;
+    color: white;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    border: 0px;
+  }
+`;
+
+export const PlanHeader = styled.div`
+  align-items: center;
+  text-align: center;
+  h3 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  h3 + div {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 74px;
+    margin-top: 60px;
+  }
+  h3 + div + div {
+    margin-top: 25px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+  }
+`;
+
+export const Profit = styled.div`
+  margin-top: 55px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 24px;
+  width: 100%;
+`;
+
+export const ProfitBody = styled.div`
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
+
+export const ProfitHeader = styled.div`
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
 `;
