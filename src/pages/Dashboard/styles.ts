@@ -48,10 +48,6 @@ export const DescriptionSpaker = styled.div`
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  /* padding-top: 38px;
-  padding-bottom: 38px;
-  padding-left: 41px;
-  padding-right: 41px; */
   height: 140px;
   font-size: 24px;
   font-family: Helvetica;
@@ -64,8 +60,42 @@ export const DescriptionSpaker = styled.div`
     font-style: normal;
     font-weight: normal;
     line-height: 28px;
+    color: #333333;
+    font-weight: 550;
   }
   div {
     color: #ff1100;
+  }
+`;
+
+export const ContagemRegressiva = styled.div`
+  height: 170px;
+  /* background: #cccc; */
+  display: flex;
+  justify-content: center;
+  padding-left: 62px;
+  padding-right: 62px;
+`;
+export const ContagemRegressivaBody = styled.div`
+  width: 1049px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+`;
+
+export const ContagemRegressivaCard = styled.div`
+  div + div {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
   }
 `;
