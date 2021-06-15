@@ -173,9 +173,6 @@ export const PlanCard = styled.div`
   align-items: center;
   width: 293px;
 
-  & + & {
-    margin-top: 100px;
-  }
   button {
     margin-top: auto;
     width: 293px;
@@ -200,6 +197,9 @@ export const PlanCard = styled.div`
   }
 
   @media (max-width: 650px) {
+    & + & {
+      margin-top: 100px;
+    }
     button {
       margin-top: 30px;
     }
