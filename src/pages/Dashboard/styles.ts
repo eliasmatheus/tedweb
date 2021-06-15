@@ -134,6 +134,10 @@ export const PlanCard = styled.div`
     font-size: 30px;
     line-height: 34px;
     border: 0px;
+    &:hover {
+      background: #c91104;
+      transition: 0.5s;
+    }
   }
 `;
 
