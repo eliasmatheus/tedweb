@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/tedweb/static/js/main.7b2b050c.chunk.js",
-    "main.js.map": "/tedweb/static/js/main.7b2b050c.chunk.js.map",
+    "main.js": "/tedweb/static/js/main.4ddef7be.chunk.js",
+    "main.js.map": "/tedweb/static/js/main.4ddef7be.chunk.js.map",
     "runtime-main.js": "/tedweb/static/js/runtime-main.d31312f6.js",
     "runtime-main.js.map": "/tedweb/static/js/runtime-main.d31312f6.js.map",
     "static/js/2.0ef0371d.chunk.js": "/tedweb/static/js/2.0ef0371d.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.d31312f6.js",
     "static/js/2.0ef0371d.chunk.js",
-    "static/js/main.7b2b050c.chunk.js"
+    "static/js/main.4ddef7be.chunk.js"
   ]
 }
