@@ -19,6 +19,25 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ece8e82e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f10;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 `;
 
 export default GlobalStyle;
