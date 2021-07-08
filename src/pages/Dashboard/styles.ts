@@ -2,11 +2,8 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
   position: relative;
-`;
-
-export const HeaderTop = styled.div`
   background: white;
-  height: 77px;
+  height: 125px;
   display: flex;
   align-items: center;
   padding-left: 30px;
@@ -16,14 +13,12 @@ export const HeaderTop = styled.div`
 
   div {
     font-family: Inter;
-    font-weight: 700;
-    font-size: 13px;
+    font-size: 20px;
     letter-spacing: 0px;
     font-style: normal;
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    color: #333333;
     cursor: pointer;
     height: 100%;
     /* background: coral; */
@@ -40,304 +35,83 @@ export const HeaderTop = styled.div`
       }
     }
   }
+  button {
+    background: #ff0000;
+    border: 0px;
+    color: white;
+    /* margin: 10px; */
+    padding: 12px 21px 12px 21px;
+    width: 189px;
+    height: 44px;
+    border-radius: 22px;
+  }
 `;
 
-export const HeaderBody = styled.div`
+export const ContrapondoParadigmas = styled.div`
   padding-top: 64px;
-  img {
-    width: 48%;
-    max-width: 684px;
-    min-width: 293px;
+  display: flex;
+  align-items: center;
+`;
+
+export const ImageSetas = styled.img`
+  width: 30%;
+  margin-left: -5px;
+`;
+
+export const ImageContrapondoParadigmas = styled.img`
+  width: 44%;
+  margin-left: 39px;
+`;
+
+export const SectionInitial = styled.div`
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const CetralText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 20px;
+`;
+
+export const LocalEvento = styled.div`
+  font-weight: 700;
+`;
+
+export const CentralButton = styled.div`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  button {
+    height: fit-content;
+    height: 46px;
+    background: #ff0000;
+    color: white;
+    border-radius: 23px;
+    border: 0px;
+    font-size: 20px;
+    padding: 12px 21px 12px 21px;
   }
 `;
 
 export const SpeakersSection = styled.div`
+  display: flex;
   background: white;
-  /* height: 855px; */
-
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
   align-items: center;
-  padding-top: 102px;
-  h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 50px;
-  }
-  div {
-    display: flex;
-    width: 100%;
-    @media (max-width: 866px) {
-      flex-direction: column;
-    }
-    div {
-      flex-direction: column;
-      div {
-        width: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-`;
-export const DescriptionSpaker = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 140px;
-  font-size: 24px;
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 28px;
-  h6 {
-    font-size: 24px;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 28px;
-    color: #333333;
-    font-weight: 550;
-  }
-  div {
-    color: #ff1100;
-  }
 `;
 
-export const CountDown = styled.div`
-  height: 170px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: -63px;
-
-  @media (max-width: 866px) {
-    height: 100px;
-    margin-bottom: -45px;
-  }
-
-  @media (max-width: 560px) {
-    height: 77px;
-    margin-bottom: -37px;
-  }
-`;
-export const CountDownBody = styled.div`
-  width: 70%;
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 74px;
-  padding-left: 3%;
-  padding-right: 3%;
-`;
-
-export const CountDownCard = styled.div`
-  div + div {
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 25px;
-    margin-top: 10px;
-  }
-
-  @media (max-width: 866px) {
-    height: 100px;
-    margin-top: 0px;
-    div {
-      font-size: 40px;
-      height: 55px;
-    }
-    div + div {
-      font-family: Helvetica;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 25px;
-      margin-top: 0px;
-    }
-  }
-
-  @media (max-width: 560px) {
-    div {
-      font-size: 20px;
-      height: 45px;
-    }
-    div + div {
-      font-family: Helvetica;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 9px;
-      line-height: 25px;
-      margin-top: 0px;
-    }
-  }
-`;
-
-export const PlanSection = styled.div`
-  /* background: black; */
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 182px;
-  margin-bottom: 182px;
-
-  @media (max-width: 650px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-export const PlanCard = styled.div`
-  color: white;
+export const CardSpeaker = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 293px;
-
-  button {
-    margin-top: auto;
-    width: 293px;
-    height: 104px;
-    background: #ff1100;
-    padding-left: 39px;
-    padding-right: 39px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 10px;
-    color: white;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 34px;
-    border: 0px;
-    &:hover {
-      background: #c91104;
-      transition: 0.5s;
-    }
-  }
-
-  @media (max-width: 650px) {
-    & + & {
-      margin-top: 100px;
-    }
-    button {
-      margin-top: 30px;
-    }
-  }
-`;
-
-export const PlanHeader = styled.div`
-  align-items: center;
-  text-align: center;
-  /* position: relative; */
-  div {
-    span {
-      font-weight: 800;
-    }
-  }
-  h3 {
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 55px;
-  }
-
-  h3 + div {
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 74px;
-    margin-top: 60px;
-  }
-  h3 + div + div {
-    margin-top: 25px;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-  }
-`;
-
-export const Profit = styled.div`
-  margin-top: 55px;
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 21px;
-  line-height: 24px;
-  width: 100%;
-`;
-
-export const ProfitBody = styled.div`
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-`;
-
-export const ProfitHeader = styled.div`
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-`;
-
-export const SponsorsSection = styled.div`
-  background: white;
-  padding-top: 53px;
-  padding-bottom: 53px;
-  padding-left: 81px;
-  padding-right: 81px;
-  h2 {
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 31px;
-    line-height: 36px;
-  }
-
-  @media (max-width: 570px) {
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: center;
-  }
-`;
-
-export const LogosSponsors = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  div + div {
-    margin-left: 60px;
-  }
-  @media (max-width: 866px) {
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (max-width: 570px) {
-    flex-direction: column;
-    text-align: center;
-    div + div {
-      margin-left: 0px;
-    }
-  }
+  background: black;
+  height: 488px;
+  width: 265px;
 `;
