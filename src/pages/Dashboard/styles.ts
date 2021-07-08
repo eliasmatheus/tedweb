@@ -113,7 +113,42 @@ export const SpeakersSection = styled.div`
 export const CardSpeaker = styled.div`
   display: flex;
   flex-direction: column;
-  background: black;
   height: 488px;
   width: 265px;
+`;
+
+export const DivImage = styled.div`
+  height: 336px;
+  background: blue;
+  /* display: flex; */
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  img {
+    width: 127%;
+    /* height: 96%; */
+    height: fit-content;
+  }
+`;
+
+export const DescriptionSpeaker = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin-top: 13px;
+`;
+export const NameSpeaker = styled.div`
+  font-weight: 700;
+  font-size: 33px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+`;
+export const OccupationSpeaker = styled.div`
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #a8a8a8;
+  text-align: center;
 `;

@@ -20,6 +20,10 @@ import {
   CentralButton,
   SpeakersSection,
   CardSpeaker,
+  NameSpeaker,
+  DescriptionSpeaker,
+  OccupationSpeaker,
+  DivImage,
 } from './styles';
 
 const Dashboard: React.FC = () => {
@@ -55,16 +59,63 @@ const Dashboard: React.FC = () => {
       </SectionInitial>
       <SpeakersSection>
         <CardSpeaker>
-          <img src={speaker1} alt="Contrapondo Paradigmas" />
+          <DivImage>
+            <img
+              src="https://media-exp3.licdn.com/dms/image/C4D03AQGfJp428KvEVQ/profile-displayphoto-shrink_800_800/0/1576464863674?e=1629331200&v=beta&t=yWSW47vOUt-rhwjy7jJJ9k1FfiVMsmUCY0nFiPg8c5E"
+              alt="FirstSpeaker"
+            />
+          </DivImage>
+          <DescriptionSpeaker>
+            <NameSpeaker>João Pedro</NameSpeaker>
+            <OccupationSpeaker>
+              Software Engineer | .NET | Node.js
+            </OccupationSpeaker>
+          </DescriptionSpeaker>
         </CardSpeaker>
+
         <CardSpeaker>
-          <img src={speaker2} alt="Contrapondo Paradigmas" />
+          <DivImage>
+            <img
+              src="https://media-exp3.licdn.com/dms/image/C4D03AQGfJp428KvEVQ/profile-displayphoto-shrink_800_800/0/1576464863674?e=1629331200&v=beta&t=yWSW47vOUt-rhwjy7jJJ9k1FfiVMsmUCY0nFiPg8c5E"
+              alt="FirstSpeaker"
+            />
+          </DivImage>
+          <DescriptionSpeaker>
+            <NameSpeaker>Fernanda Sousa</NameSpeaker>
+            <OccupationSpeaker>
+              Analista de Produto | UX/UI na B2W Digital
+            </OccupationSpeaker>
+          </DescriptionSpeaker>
         </CardSpeaker>
+
         <CardSpeaker>
-          <img src={speaker3} alt="Contrapondo Paradigmas" />
+          <DivImage>
+            <img
+              src="https://media-exp3.licdn.com/dms/image/C4D03AQGfJp428KvEVQ/profile-displayphoto-shrink_800_800/0/1576464863674?e=1629331200&v=beta&t=yWSW47vOUt-rhwjy7jJJ9k1FfiVMsmUCY0nFiPg8c5E"
+              alt="FirstSpeaker"
+            />
+          </DivImage>
+          <DescriptionSpeaker>
+            <NameSpeaker>João Arêas</NameSpeaker>
+            <OccupationSpeaker>
+              Lead Organizer at TEDxBeloHorizonte
+            </OccupationSpeaker>
+          </DescriptionSpeaker>
         </CardSpeaker>
+
         <CardSpeaker>
-          <img src={speaker4} alt="Contrapondo Paradigmas" />
+          <DivImage>
+            <img
+              src="https://media-exp3.licdn.com/dms/image/C4D03AQGfJp428KvEVQ/profile-displayphoto-shrink_800_800/0/1576464863674?e=1629331200&v=beta&t=yWSW47vOUt-rhwjy7jJJ9k1FfiVMsmUCY0nFiPg8c5E"
+              alt="FirstSpeaker"
+            />
+          </DivImage>
+          <DescriptionSpeaker>
+            <NameSpeaker>João Pedro</NameSpeaker>
+            <OccupationSpeaker>
+              Software Engineer | .NET | Node.js
+            </OccupationSpeaker>
+          </DescriptionSpeaker>
         </CardSpeaker>
       </SpeakersSection>
     </>
