@@ -42,8 +42,9 @@ export const Header = styled.div`
     /* margin: 10px; */
     padding: 12px 21px 12px 21px;
     width: 189px;
-    height: 44px;
+    height: 46px;
     border-radius: 22px;
+    font-size: 20px;
   }
 `;
 
@@ -96,6 +97,7 @@ export const CentralButton = styled.div`
     border-radius: 23px;
     border: 0px;
     font-size: 20px;
+    width: 189px;
     padding: 12px 21px 12px 21px;
   }
 `;
