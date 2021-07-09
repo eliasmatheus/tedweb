@@ -1,0 +1,48 @@
+/* 
+  ============================== Bootstrap Theming ==============================
+  Este arquivo utiliza os métodos de "theming" do próprio Bootstrap para mudar de 
+  forma dinâmica as cores padrões para as cores utilizadas no nosso tema personalizado 
+  do Nebular
+*/
+
+// Required
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+/* ========== Aplica as cores do Nebular ao tema do bootstrap ========== */
+$theme-colors: (
+  "primary": #ff0000,
+  "secondary": #767a83,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+// // Muda as cores da validação do form
+// $form-feedback-invalid-color: nb-theme(color-danger-500);
+// $form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}' viewBox='0 0 12 12'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>") !default;
+// $form-validation-states: (
+//   (
+//     "valid": (
+//       "color": $form-feedback-valid-color,
+//       "icon": $form-feedback-icon-valid,
+//     ),
+//     "invalid": (
+//       "color": $form-feedback-invalid-color,
+//       "icon": $form-feedback-icon-invalid,
+//     ),
+//   )
+// );
+
+// /*
+//   Muda a altura dos inputs do Bootstrap para que fiquem da mesma altura
+//   dos inputs do Nebular
+// */
+// $input-height: calc(1.5em + 0.75rem + 4px);
+
+// ! O bootstrap deve ser importado por último, para que as modificações funcionem
+@import "bootstrap";

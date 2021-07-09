@@ -12,6 +12,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/parser": "^4.27.0",
+    "bootstrap": "^4.6.0",
     "gh-pages": "^3.2.1",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
@@ -28,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "sass": "sass src/Sass:src/Css --watch --no-source-map"
   },
   "eslintConfig": {
     "extends": [
@@ -61,6 +63,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "sass": "^1.35.2"
   }
 }
